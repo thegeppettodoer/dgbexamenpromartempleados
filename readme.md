@@ -15,3 +15,22 @@ curl -i -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "id=2&em
 
 4. Todos los empleados:
  curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET http://localhost:8080/empleados
+
+
+
+
+Docker:
+0. Build: 
+docker build -t nodepromartdgbempleadosdocker .
+
+
+1. Ejecutar imagen
+docker run -it -p 4000:8080 nodepromartdgbempleadosdocker 
+
+
+2. Ejecutar ps
+docker run -d -p 4000:8080 nodepromartdgbempleadosdocker
+
+
+3. Detener obtener id de docker images
+docker stop <id3>

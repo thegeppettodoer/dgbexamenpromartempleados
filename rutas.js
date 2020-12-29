@@ -34,6 +34,13 @@ if (!firebase.apps.length) {
 var limiter = new RateLimiter();
 //   limiter.addLimit("/login", "GET", 5, 500),
 
+// Authentication and Authorization Middleware
+// var auth = function (req, res, next) {
+//   if (req.session && req.session.user === user && req.session.admin)
+//     return next();
+//   else return res.sendStatus(401);
+// };
+
 router.get("/", (req, res) => {
   res.json({ status: 200, message: "hello...get>" });
 });
@@ -47,9 +54,13 @@ router.post("/login", urlencodedParser, (req, res) => {
       res.json(e);
     } else {
       user = email;
+
+    //   req.session.user = email;
+    //   req.session.admin = true;
+
       res.json({
         status: 200,
-        message: "hello...post login email,password> " + JSON.stringify(e),
+        message: "Success login email,password> " + JSON.stringify(e),
       });
     }
   });
@@ -109,8 +120,7 @@ router.get("/empleados", (req, res) => {
     if (e.error === -1) {
       res.json(e);
     } else {
-    //   console.log("router all empleados ok ", e);
-
+      //   console.log("router all empleados ok ", e);
       res.json({
         status: 200,
         resultado: e,
