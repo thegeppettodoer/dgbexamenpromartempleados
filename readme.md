@@ -1,6 +1,8 @@
 autor:  david garcia balarezo
 email:  victordad0117@gmail.com
 web:    http://keikenapps.web.app/
+github: https://github.com/thegeppettodoer/dgbexamenpromartempleadosdocket hub: https://hub.docker.com/r/victordad0117/nodepromartdgbempleadosdocker
+
 
 
 1. Login: con, Content-Type: application/x-www-form-urlencoded
@@ -34,3 +36,12 @@ docker run -d -p 4000:8080 nodepromartdgbempleadosdocker
 
 3. Detener obtener id de docker images
 docker stop <id3>
+
+
+4. rename docker images, para poder hacer el push
+docker tag 6fb6d145825a victordad0117/nodepromartdgbempleadosdocker:latest
+
+
+5. Subiendo a docker hub: docker login -u victordad0117
+sudo docker push victordad0117/nodepromartdgbempleadosdocker
+
