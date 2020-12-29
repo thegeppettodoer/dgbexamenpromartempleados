@@ -1,0 +1,31 @@
+{
+  "name": "backpromart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parse": "^0.1.0",
+    "express": "^4.17.1",
+    "express-bouncer": "^0.2.0",
+    "express-brute": "^1.0.1",
+    "express-session": "^1.17.1",
+    "firebase": "^8.2.1",
+    "helmet": "^4.3.1",
+    "helmet-csp": "^3.3.1",
+    "morgan": "^1.10.0",
+    "path": "^0.12.7",
+    "rate-limiter": "^0.2.0",
+    "toobusy-js": "^0.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
