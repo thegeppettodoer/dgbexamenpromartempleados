@@ -1,6 +1,11 @@
 const { Router } = require("express");
 const router = Router();
-const { login, register, empleados } = require("./funcionesexternas");
+const {
+  login,
+  register,
+  empleados,
+  allempleados,
+} = require("./funcionesexternas");
 const { RateLimiter } = require("rate-limiter");
 const bodyParser = require("body-parser");
 var jsonParser = bodyParser.json();
@@ -84,7 +89,7 @@ router.post("/empleados", urlencodedParser, (req, res) => {
     employee_salary,
     employee_age,
     profile_image,
-    username
+    user
   ).then((e) => {
     if (e.error === -1) {
       res.json(e);
@@ -99,6 +104,20 @@ router.post("/empleados", urlencodedParser, (req, res) => {
   });
 });
 
+router.get("/empleados", (req, res) => {
+  var returnEmpleados = allempleados(user).then((e) => {
+    if (e.error === -1) {
+      res.json(e);
+    } else {
+    //   console.log("router all empleados ok ", e);
+
+      res.json({
+        status: 200,
+        resultado: e,
+      });
+    }
+  });
+});
 router.put("/", (req, res) => {
   res.json({ status: 200, message: "hello...put>" });
 });

@@ -98,4 +98,27 @@ module.exports = {
       return { error: -1, message: "Error al Empleados " + e.code };
     }
   },
+
+  allempleados: async (username) => {
+    try {
+      var a2 = await firebase
+        .database()
+        .ref("empleados")
+        .orderByChild("id")
+        .limitToFirst(9999) //,limitToLast(2)
+        .once("value")
+        .then((snapshot) => {
+          return snapshot.val();
+        });
+
+      return {
+        error: 0,
+        username: username,
+        empleados: a2
+      };
+    } catch (e) {
+      console.log("AllEmpleados>Error>", e);
+      return { error: -1, message: "Error al AllEmpleados " + e.code };
+    }
+  },
 };
