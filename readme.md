@@ -6,17 +6,18 @@ docket hub: https://hub.docker.com/r/victordad0117/nodepromartdgbempleadosdocker
 
 </hr>
 <h2>Pasos</h2></br>
-<li>1. Login:</li> con, Content-Type: application/x-www-form-urlencoded
+<li>1. Login:</li> 
 curl -i -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "email=1victordad0117%40gmail.com&pass=1234567890" http://localhost:8080/login
 
-<li>2.Registrar usuario:</li>  con, Content-Type: application/x-www-form-urlencoded
+<li>2.Registrar usuario:</li>  
 curl -i -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "email=4victordad0117%40gmail.com&pass=1234567890&username=2victordad0117&name=victor" http://localhost:8080/register
 
-<li>3. Empleados</li>, registrar nuevo empleado: con, Content-Type: application/x-www-form-urlencoded
+<li>3. Empleados registrar nuevo empleado:  </li>
+
 curl -i -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "id=2&employee_name=Garrett+Winters&employee_salary=170750&employee_age=62&profile_image=none" http://localhost:4000/empleados
 
 
-<li>4. Todos los empleados:</li>
+<li>4. Ver todos los empleados registrado:</li>
  curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET http://localhost:8080/empleados
 
 
@@ -33,8 +34,8 @@ docker build -t nodepromartdgbempleadosdocker .
 docker run -it -p 4000:8080 nodepromartdgbempleadosdocker 
 
 
-<li>2. Ejecutar ps</li>
-docker run -d -p 4000:8080 nodepromartdgbempleadosdocker
+<li>2. Ejecutar </li>
+docker run -d -p 4000:8080 victordad0117/nodepromartdgbempleadosdocker
 
 
 <li>3. Detener obtener id de docker images</li>
@@ -57,7 +58,7 @@ sudo docker push victordad0117/nodepromartdgbempleadosdocker
 <li>1.  Ejecutar:</li>
 node appconsole
 
-<li>2. Para copiar </li>los datos del empleado jalado de http://dummy.restapiexample.com/api/v1/employees , debemos Ingresar el ID del empleado, y se copiara en la base de datos firebase realtime de google.
+<li>2. Para copiar los datos del empleado jalado de http://dummy.restapiexample.com/api/v1/employees , debemos Ingresar el ID del empleado, y se copiara en la base de datos firebase realtime de google.</li>
 </br>
 [Para salir presione en miniscula: "q"]</br>
 [Para ver todos los empleado,escribir en miniscula: "ver"]</br>
