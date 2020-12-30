@@ -1,12 +1,7 @@
 const firebase = require("firebase");
 
 module.exports = {
-  getName: () => {
-    return "Jim";
-  },
-
-  fecha: "12.01.1982",
-
+ 
   login: async (email, password) => {
     try {
       console.log(">Login", email, password);
@@ -108,13 +103,14 @@ module.exports = {
         .limitToFirst(9999) //,limitToLast(2)
         .once("value")
         .then((snapshot) => {
+          // console.log('allempleados:',snapshot.val());
           return snapshot.val();
         });
 
       return {
         error: 0,
         username: username,
-        empleados: a2
+        empleados: a2,
       };
     } catch (e) {
       console.log("AllEmpleados>Error>", e);

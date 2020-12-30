@@ -87,6 +87,8 @@ router.post("/register", urlencodedParser, (req, res) => {
 });
 
 router.post("/empleados", urlencodedParser, (req, res) => {
+  console.log('>Post> /empledos - ',req.body);
+  
   var id = req.body.id;
   var employee_name = req.body.employee_name;
   var employee_salary = req.body.employee_salary;

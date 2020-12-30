@@ -1,7 +1,8 @@
 autor:  david garcia balarezo
 email:  victordad0117@gmail.com
 web:    http://keikenapps.web.app/
-github: https://github.com/thegeppettodoer/dgbexamenpromartempleadosdocket hub: https://hub.docker.com/r/victordad0117/nodepromartdgbempleadosdocker
+github: https://github.com/thegeppettodoer/dgbexamenpromartempleados
+docket hub: https://hub.docker.com/r/victordad0117/nodepromartdgbempleadosdocker
 
 
 
@@ -12,7 +13,7 @@ curl -i -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "email=1
 curl -i -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "email=4victordad0117%40gmail.com&pass=1234567890&username=2victordad0117&name=victor" http://localhost:8080/register
 
 3. Empleados, registrar nuevo empleado: con, Content-Type: application/x-www-form-urlencoded
-curl -i -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "id=2&employee_name=Garrett+Winters&employee_salary=170750&employee_age=62&profile_image=none" http://localhost:8080/empleados
+curl -i -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "id=2&employee_name=Garrett+Winters&employee_salary=170750&employee_age=62&profile_image=none" http://localhost:4000/empleados
 
 
 4. Todos los empleados:
