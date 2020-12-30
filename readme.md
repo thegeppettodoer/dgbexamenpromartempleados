@@ -69,9 +69,44 @@ Agregando empleado: Airi Satou {</br>
   status: 200,</br>
   message: 'hello...post empleados email,password> {"error":0,"id":"5","employee_name":"Airi Satou","username":null}'</br>
 }</br>
+
 </br>
-
-
+<li>3. Escribir "ver"</li>
+</br>
+ver</br>
+Mostrando todos los empleados:  [</br>
+  null,</br>
+  {</br>
+    "employee_age": "61",</br>
+    "employee_name": "Tiger Nixon",</br>
+    "employee_salary": "320800",</br>
+    "id": "1",</br>
+    "profile_image": ""</br>
+  },</br>
+  {</br>
+    "employee_age": "63",</br>
+    "employee_name": "Garrett Winters",</br>
+    "employee_salary": "170750",</br>
+    "id": "2",</br>
+    "profile_image": ""</br>
+  },</br>
+  {</br>
+    "employee_age": "66",</br>
+    "employee_name": "Ashton Cox",</br>
+    "employee_salary": "86000",</br>
+    "id": "3",</br>
+    "profile_image": ""</br>
+  },</br>
+  null,</br>
+  {</br>
+    "employee_age": "33",</br>
+    "employee_name": "Airi Satou",</br>
+    "employee_salary": "162700",</br>
+    "id": "5",</br>
+    "profile_image": ""</br>
+  }</br>
+]</br>
+</br>
 
 
  
