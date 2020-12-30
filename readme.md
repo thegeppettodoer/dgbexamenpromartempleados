@@ -1,8 +1,8 @@
-autor:  david garcia balarezo
-email:  victordad0117@gmail.com
-web:    http://keikenapps.web.app/
-github: https://github.com/thegeppettodoer/dgbexamenpromartempleados
-docket hub: https://hub.docker.com/r/victordad0117/nodepromartdgbempleadosdocker
+autor:  david garcia balarezo   \n
+email:  victordad0117@gmail.com   \n
+web:    http://keikenapps.web.app/    \n
+github: https://github.com/thegeppettodoer/dgbexamenpromartempleados   \n
+docket hub: https://hub.docker.com/r/victordad0117/nodepromartdgbempleadosdocker  \n
 
 
 
